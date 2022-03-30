@@ -3,6 +3,7 @@ package com.main.rest6.security.jwt;
 import com.main.rest6.model.Role;
 import com.main.rest6.model.Status;
 import com.main.rest6.model.XUser;
+import org.springframework.context.annotation.Bean;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 

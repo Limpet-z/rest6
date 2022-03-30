@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
+import java.util.Locale;
 
 @Entity
 @Table(name = "users")
@@ -19,6 +20,18 @@ public class XUser extends BaseEntity {
 
     @Column(name = "password")
     private String password;
+
+    @Column(name = "ip")
+    private Locale ip;
+
+    @Column(name = "country")
+    private String country;
+
+    @Column(name = "subscriber")
+    private String subscriber;
+
+    @Column(name = "subscribeExpiration")
+    private int subscribeExpiration;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles",

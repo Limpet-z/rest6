@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_outer_classname = "AlbumProtos";
+option java_package = "src/main/resources/outputProtoBuf";
+
+message Album {
+  string title = 1;
+
+  repeated string artist = 2;
+  int32 release_year = 3;
+  repeated string song_title = 4;
+}
+
+
+
+//    могут присутствовать в сообщении более одного раза, так как для них указано зарезервированное слово repeated.

@@ -1,0 +1,23 @@
+[
+  {
+    "Method-LOGIN": "GET",
+    "Type": "HTTP 1.1",
+
+    "Body":
+    {
+      "URL": "GET /api/v1/admin/users/5244934@gmail.com?Auth=null HTTP/1.1",
+      "Host": "localhost:8080",
+      "Authorization": "access-token"
+    }
+  },
+  {
+    "Method-LOGIN": "POST",
+    "Type": "JSON",
+
+    "Body":
+    {
+      "email": "5244934@gmail.com",
+      "password": "password"
+    }
+  }
+]

@@ -1,9 +1,15 @@
 package com.main.rest6.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.main.rest6.model.Role;
 import com.main.rest6.model.Status;
 import com.main.rest6.model.XUser;
 import lombok.Data;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -19,6 +25,7 @@ public class AdminUserDto {
         user.setUsername(username);
         user.setEmail(email);
         user.setStatus(Status.valueOf(status));
+
         return user;
     }
 
@@ -28,6 +35,7 @@ public class AdminUserDto {
         adminUserDto.setUsername(user.getUsername());
         adminUserDto.setEmail(user.getEmail());
         adminUserDto.setStatus(user.getStatus().name());
+
         return adminUserDto;
     }
 }

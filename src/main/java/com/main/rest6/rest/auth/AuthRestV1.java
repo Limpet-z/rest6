@@ -1,4 +1,4 @@
-package com.main.rest6.rest;
+package com.main.rest6.rest.auth;
 
 import com.main.rest6.model.XUser;
 import com.main.rest6.repository.UserRepositoryJPA;
@@ -20,15 +20,15 @@ import java.util.Map;
 
 @RestController
 @RequestMapping(value = "/api/v1/auth/")
-public class AuthenticationRestControllerV1 {
+public class AuthRestV1 {
 
     private final AuthenticationManager authenticationManager;
     private final JwtTokenProvider jwtTokenProvider;
     private final UserRepositoryJPA userRepositoryJPA;
 
     @Autowired
-    public AuthenticationRestControllerV1(AuthenticationManager authenticationManager, JwtTokenProvider jwtTokenProvider,
-                                          UserRepositoryJPA userRepositoryJPA) {
+    public AuthRestV1(AuthenticationManager authenticationManager, JwtTokenProvider jwtTokenProvider,
+                      UserRepositoryJPA userRepositoryJPA) {
         this.authenticationManager = authenticationManager;
         this.jwtTokenProvider = jwtTokenProvider;
         this.userRepositoryJPA = userRepositoryJPA;

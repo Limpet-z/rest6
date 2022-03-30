@@ -1,0 +1,38 @@
+[{
+    "id": "00000001",
+    "email": "5244934@gmail.com",
+    "username": "Anthony Kozinau",
+    "ip": "192.168.0.0",
+    "country": "Belarus",
+    "main-role": "OWNER",
+    "status": "ACTIVE",
+    "timestamp": null,
+    "subscriber": "ACTIVE",
+    "subscribeExpiration": "90"
+  },
+  {
+    "cryptoMarket": [
+      {
+        "Binance": {
+          "assets": {
+            "BTC": "0.2548",
+            "ETH": "23.589",
+            "USDT": "156,562.00"
+          }
+        },
+        "CoinBase": {
+          "assets": {
+            "BTC": "0.2548",
+            "ETH": "23.589",
+            "USDT": "156,562.00"
+          }
+        },
+        "X": {
+          "assets": {
+            "BTC": "0.2548",
+            "ETH": "23.589",
+            "USDT": "156,562.00"
+          }
+        }
+      }]
+  }]
